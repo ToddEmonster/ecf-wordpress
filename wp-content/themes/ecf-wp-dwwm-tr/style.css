@@ -11,8 +11,8 @@ Version: 1.0
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Global variables and debug
 # Normalize
+# Global variables and debug
 # Typography
 # Elements
 # Forms
@@ -34,23 +34,6 @@ Version: 1.0
 	## Widget areas styles and basic widgets styles
 	## WordPress default widgets styles
 --------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Global variables and debug
--------------------------------------------------------------- */
-:root {
-    --main-bg-color: rgb(253, 126, 55);
-}
-
-/* When admin bar is visible */
-.menu {
-    position: fixed;
-    top: 0px;
-}
-
-.admin-bar .menu {
-    top: 32px; /* on prend en compte le décalage */
-}
 
 /*--------------------------------------------------------------
 # Normalize
@@ -269,8 +252,151 @@ th {
 }
 
 /*--------------------------------------------------------------
+# Global variables and debug
+-------------------------------------------------------------- */
+:root {
+    --primary: #331100;
+    --secondary: #fd7e37;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: var(--secondary);
+}
+
+::selection {
+    color: #fff;
+    background-color: var(--secondary);
+}
+
+/*--------------------------------------------------------------
 # Typography
 -------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'Raleway';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 600;
+    src: local('Raleway SemiBold'), local('Raleway-SemiBold'),
+        url('../fonts/raleway-v16-latin-600.woff2') format('woff2'),
+        url('../fonts/raleway-v16-latin-600.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+    src: local('Raleway Bold'), local('Raleway-Bold'),
+        url('../fonts/raleway-v16-latin-700.woff2') format('woff2'),
+        url('../fonts/raleway-v16-latin-700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+        url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    font-style: italic;
+    font-weight: 400;
+    src: local('Montserrat Italic'), local('Montserrat-Italic'),
+        url('../fonts/montserrat-v14-latin-italic.woff2') format('woff2'),
+        url('../fonts/montserrat-v14-latin-italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 500;
+    src: local('Montserrat Medium'), local('Montserrat-Medium'),
+        url('../fonts/montserrat-v14-latin-500.woff2') format('woff2'),
+        url('../fonts/montserrat-v14-latin-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 600;
+    src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+        url('../fonts/montserrat-v14-latin-600.woff2') format('woff2'),
+        url('../fonts/montserrat-v14-latin-600.woff') format('woff');
+}
+
+/* General */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1;
+}
+
+h1 {
+    margin-bottom: 4rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    margin-bottom: 1.6rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: inherit;
+    transition: 0.3s;
+}
+
+section,
+body:not(.home):not(.formation-simple) main {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.section-title {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.inverted {
+    color: #fff;
+    background-color: var(--secondary);
+}
 
 /*--------------------------------------------------------------
 # Content
@@ -281,5 +407,5 @@ th {
 
 .header {
     min-height: 106px;
-    background-color: var(--main-bg-color);
+    background-color: var(--secondary);
 }
