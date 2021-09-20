@@ -10,5 +10,7 @@
 <body <?php body_class(); ?>>
     <header class="header">
     <a href="<?php echo home_url( '/' ); ?>">DWWM</a>
+    <a href="<?php echo home_url( '/actualites' ); ?>">Actualités</a>
+
     </header>
     <?php wp_body_open(); ?>
