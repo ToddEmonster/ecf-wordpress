@@ -9,6 +9,6 @@
 
 <body <?php body_class(); ?>>
     <header class="header">
-        Je suis le header
+    <a href="<?php echo home_url( '/' ); ?>">DWWM</a>
     </header>
     <?php wp_body_open(); ?>
