@@ -8,5 +8,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-    
+    <header class="header">
+        Je suis le header
+    </header>
     <?php wp_body_open(); ?>
