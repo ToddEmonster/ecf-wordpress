@@ -11,6 +11,7 @@
     <header class="header">
     <a href="<?php echo home_url( '/' ); ?>">DWWM</a>
     <a href="<?php echo home_url( '/actualites' ); ?>">Actualités</a>
+    <a href="<?php echo home_url( '/etudiant-e-s' ); ?>">Les Étudiant•e•s</a>
 
     </header>
     <?php wp_body_open(); ?>

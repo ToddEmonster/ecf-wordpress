@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<h1>ARCHIVE</h1>
+<h1>ACTUALITÉS</h1>
 
 <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
