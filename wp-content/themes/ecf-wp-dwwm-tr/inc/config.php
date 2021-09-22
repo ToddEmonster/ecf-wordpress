@@ -31,3 +31,9 @@ set_post_thumbnail_size( 400, 260, true );
 //     return $sizes;
 // }
 // add_filter( 'image_size_names_choose', 'todd_editor_image_sizes' );
+
+register_nav_menus( array(
+	'main' => 'Menu Principal',
+	'footer' => 'Bas de page',
+    'social' => 'Réseaux sociaux'
+) );

@@ -1,6 +1,6 @@
 <?php
 
-function todd_register_assets() {
+function ecf_register_assets() {
 
     // Déclarer le JS
 	wp_enqueue_script( 
@@ -19,12 +19,20 @@ function todd_register_assets() {
         '1.0'
     );
 
-    // TODO Déclarer un autre fichier CSS
+    // Normalize
     wp_enqueue_style( 
-        'style_bis', 
+        'base', 
+        get_template_directory_uri() . '/css/base.css',
+        array(), 
+        '1.0'
+    );
+
+    // Custom style
+    wp_enqueue_style( 
+        'main', 
         get_template_directory_uri() . '/css/main.css',
         array(), 
         '1.0'
     );
 }
-add_action( 'wp_enqueue_scripts', 'todd_register_assets' );
+add_action( 'wp_enqueue_scripts', 'ecf_register_assets' );
