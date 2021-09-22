@@ -16,9 +16,13 @@ set_post_thumbnail_size( 400, 260, true );
 
 // TODO
 // /* Création de tailles d'images personnalisées */
-// add_image_size('archive_thumbnail', 540, 500, true);
-// add_image_size( 'portfolio_featured', 1100, 500, true );
-// add_image_size( 'portfolio_preview', 635, 400, true );
+add_image_size('accueil_hero', 1440, 677);
+add_image_size('accueil_actu', 400, 260);
+add_image_size('accueil_formation', 617, 260);
+add_image_size('accueil_etudiants', 220, 220);
+add_image_size('single_etudiant', 400, 400);
+add_image_size('single_actu', 840, 606);
+add_image_size('single_module', 1440, 400, true);
 
 // /* Ajout des tailles d'images dans l'éditeur */
 

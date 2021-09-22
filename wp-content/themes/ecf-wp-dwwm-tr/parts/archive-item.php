@@ -1,6 +1,10 @@
 <article class="post">
 
-    <?php the_post_thumbnail(); ?>
+    <?php the_post_thumbnail('single-actu', [
+        'class' => 'card-img',
+        'alt' => get_the_title(),
+        'loading' => 'lazy'
+    ]); ?>
     
     <p class="post__meta">
         <?php the_time( 'd/m/Y' ); ?>
