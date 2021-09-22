@@ -27,4 +27,4 @@ function todd_register_assets() {
         '1.0'
     );
 }
-add_action( 'wp_enqueue_scripts', 'register_assets' );
+add_action( 'wp_enqueue_scripts', 'todd_register_assets' );
