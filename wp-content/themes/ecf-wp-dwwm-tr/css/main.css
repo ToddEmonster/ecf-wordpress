@@ -602,13 +602,13 @@ body:not(.home):not(.formation-simple) main {
     color: var(--secondary);
 }
 
-.pagination-list {
+.pagination > .nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.pagination-link {
+.pagination .page-numbers {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -623,9 +623,9 @@ body:not(.home):not(.formation-simple) main {
     border-radius: 0.5rem;
 }
 
-.current .pagination-link,
-.pagination-link:hover,
-.pagination-link:focus {
+.page-numbers.current,
+.page-numbers:hover,
+.page-numbers:focus {
     color: #fff;
     background-color: var(--secondary);
 }
