@@ -19,9 +19,31 @@ function todd_register_post_types() {
         'has_archive' => true,
         'supports' => array( 'title', 'editor','thumbnail', 'revisions' ),
         'menu_position' => 5, 
-        'menu_icon' => 'dashicons-admin-users', // TODO -book-alt for module
+        'menu_icon' => 'dashicons-admin-users',
     );
 
     register_post_type( 'etudiant-e', $args );
+
+    // CPT Module
+    $labels = array(
+        'name' => 'Module',
+        'all_items' => 'Tous les modules',  // affiché dans le sous menu
+        'singular_name' => 'Module',
+        'add_new_item' => 'Ajouter un module',
+        'edit_item' => 'Modifier le module',
+        'menu_name' => 'Module'
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'show_in_rest' => true,
+        'has_archive' => true,
+        'supports' => array( 'title', 'editor','thumbnail', 'revisions' ),
+        'menu_position' => 5, 
+        'menu_icon' => 'dashicons-book-alt',
+    );
+
+    register_post_type( 'module', $args );
 }
 add_action( 'init', 'todd_register_post_types' );
