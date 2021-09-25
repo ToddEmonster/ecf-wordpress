@@ -14,7 +14,6 @@
 				'menu_class' => 'menu'
 			) ); ?>
             <?php
-			$social = 'facebook';
 			wp_nav_menu( array( 
 				'theme_location' => 'social',
 				'container' => 'nav',
