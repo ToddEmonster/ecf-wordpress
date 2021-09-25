@@ -3,7 +3,7 @@
 <main id="main-content" class="student-post">
     <div class="container">
         <img loading="lazy"  src="<?php the_field( 'photo' ); ?>" alt="Francine Auhi" class="student-post-img">
-        <h1 class="student-post-title"><?php the_field( 'nom' ); ?></h1>
+        <h1 class="student-post-title"><?php the_title(); ?></h1>
         <div class="field">
             <div class="field-title">Son film</div>
             <div class="field-content"><?php the_field( 'field' ); ?></div>
