@@ -18,7 +18,7 @@
             <div class="field-content"><?php the_field( 'film' ); ?></div>
         </div>
         <div class="field">
-            <div class="field-title"><?php echo get_field_object('serie')['label'] ?>/div>
+            <div class="field-title"><?php echo get_field_object('serie')['label'] ?></div>
             <div class="field-content"><?php the_field( 'serie' ); ?></div>
         </div>
         <div class="field">
