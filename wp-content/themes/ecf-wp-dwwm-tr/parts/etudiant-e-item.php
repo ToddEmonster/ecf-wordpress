@@ -10,6 +10,5 @@
                 );
     } ?>
     <h2 class="student-name"><?php the_title(); ?></h2> 
-
     <a href="<?php the_permalink(); ?>" class="student-link">En savoir plus</a>
 </article>
