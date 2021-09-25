@@ -60,3 +60,8 @@ function my_theme_archive_title( $title ) {
 }
 
 add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
+
+function new_excerpt_more( $more ) {
+    return ' ...'; // replace the normal [...]
+}   
+add_filter('excerpt_more', 'new_excerpt_more');
