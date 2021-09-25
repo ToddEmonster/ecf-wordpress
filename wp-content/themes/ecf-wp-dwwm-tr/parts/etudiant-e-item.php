@@ -2,11 +2,10 @@
     <img
         class="student-img"
         loading="lazy" 
-        src="img/etudiant-1.jpg"
-        srcset="img/etudiant-1.jpg,
-                img/etudiant-1_2x.jpg 2x"
-        alt="<?php the_title() ?>"
+        src="<?php the_field('photo') ?>"
+        alt="<?php the_field('nom') ?>"
     >
-    <h2 class="student-name">John Doe</h2> <!-- TODO change for the_name()... -->
+    <h2 class="student-name"><?php the_field('nom'); ?></h2> 
+
     <a href="<?php the_permalink(); ?>" class="student-link">En savoir plus</a>
 </article>
