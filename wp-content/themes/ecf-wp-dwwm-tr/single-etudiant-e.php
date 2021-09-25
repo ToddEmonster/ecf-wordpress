@@ -2,7 +2,16 @@
 
 <main id="main-content" class="student-post">
     <div class="container">
-        <img loading="lazy"  src="<?php the_field( 'photo' ); ?>" alt="Francine Auhi" class="student-post-img">
+        <?php
+            $image_id = get_field( 'photo' );
+                if( $image_id ) {	
+                    echo wp_get_attachment_image(
+                        $image_id,
+                        'full',
+                        '',
+                        array( "class" => "student-post-img" )
+                    );
+        } ?>
         <h1 class="student-post-title"><?php the_title(); ?></h1>
         <div class="field">
             <div class="field-title">Son film</div>
