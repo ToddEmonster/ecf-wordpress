@@ -589,9 +589,9 @@ body:not(.home):not(.formation-simple) main {
     align-items: center;
     min-height: 40rem;
     color: #fff;
-    background-image: url(../img/formation-1.jpg);
     background-size: cover;
     background-position: center;
+    margin-top: -4rem;
 }
 
 /* Pagination */
@@ -799,6 +799,7 @@ body:not(.home):not(.formation-simple) main {
     .module-hero {
         background-image: url(../img/formation-1_2x.jpg);
     }
+    /* TODO */
 }
 
 @media (min-width: 64em) {
