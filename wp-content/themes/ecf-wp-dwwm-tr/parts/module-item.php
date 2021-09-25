@@ -13,6 +13,7 @@
     </div>  
     <a href="<?php the_permalink(); ?>" class="card-link">
         Lire la suite
+        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/img/icon-arrow-right.svg" alt="" aria-hidden="true">
     </a>
 
 </article>
