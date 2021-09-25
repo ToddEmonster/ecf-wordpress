@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main id="main-content" class="post">
+<main id="main-content" class="module-post">
     <section
         class="module-hero"
         style="background-image: url(

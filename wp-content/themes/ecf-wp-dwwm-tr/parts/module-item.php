@@ -6,7 +6,7 @@
         'loading' => 'lazy'
     ]); ?>
     <div class="card-content">
-        <h2 class="card-title"><?php the_title(); ?></h2>
+        <h2 class="card-title">Module <?php the_title(); ?></h2>
         <p class="card-excerpt">
             <?php echo get_the_excerpt(); ?>
         </p>
