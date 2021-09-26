@@ -7,4 +7,4 @@ require_once get_template_directory() . '/inc/config.php';
 require_once get_template_directory() . '/inc/post-types.php';
 
 // Fonctionnalités
-require_once get_template_directory() . '/inc/features.php';
+require_once get_template_directory() . '/inc/assets.php';
