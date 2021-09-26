@@ -4,7 +4,7 @@
             if( $image_id ) {	
                 echo wp_get_attachment_image(
                     $image_id,
-                    'full',
+                    'archive_item_etudiant-e',
                     '',
                     array( "class" => "student-img" )
                 );

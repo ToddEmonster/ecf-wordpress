@@ -1,6 +1,6 @@
 <article class="card">
 
-    <?php the_post_thumbnail('', [
+    <?php the_post_thumbnail('archive_item_actualite', [
         'class' => 'card-img',
         'alt' => get_the_title(),
         'loading' => 'lazy'

@@ -7,7 +7,7 @@
                 if( $image_id ) {	
                     echo wp_get_attachment_image(
                         $image_id,
-                        'full',
+                        'single_etudiant',
                         '',
                         array( "class" => "student-post-img" )
                     );
@@ -26,8 +26,8 @@
             <div class="field-content"><?php the_field( 'jeu_video' ); ?></div>
         </div>
         <div class="field">
-            <div class="field-title"><?php echo get_field_object('heros-ine')['label'] ?></div>
-            <div class="field-content"><?php the_field( 'heros-ine' ); ?></div>
+            <div class="field-title"><?php echo get_field_object('hero-ine')['label'] ?></div>
+            <div class="field-content"><?php the_field( 'hero-ine' ); ?></div>
         </div>
         <div class="field">
             <div class="field-title"><?php echo get_field_object('livre')['label'] ?></div>

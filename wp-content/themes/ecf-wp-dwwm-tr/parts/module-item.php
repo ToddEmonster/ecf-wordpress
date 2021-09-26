@@ -1,6 +1,6 @@
 <article class="card">
 
-    <?php the_post_thumbnail('', [
+    <?php the_post_thumbnail('archive_item_module', [
         'class' => 'card-img',
         'alt' => get_the_title(),
         'loading' => 'lazy'
@@ -13,7 +13,11 @@
     </div>  
     <a href="<?php the_permalink(); ?>" class="card-link">
         Lire la suite
-        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri() ?>/img/icon-arrow-right.svg" alt="" aria-hidden="true">
+        <img 
+            alt="" 
+            aria-hidden="true"
+            loading="lazy" 
+            src="<?php echo get_stylesheet_directory_uri() ?>/img/icon-arrow-right.svg" >
     </a>
 
 </article>

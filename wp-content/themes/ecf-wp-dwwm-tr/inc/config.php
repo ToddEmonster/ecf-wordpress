@@ -19,33 +19,14 @@ add_action( 'admin_menu', 'ecf_remove_menu_pages' );
 // Définir la taille des images mises en avant
 set_post_thumbnail_size( 400, 260, true );
 
-// TODO
 // Création de tailles d'images personnalisées
-// add_image_size('accueil_hero', 1440, 677);
-// add_image_size('accueil_actu', 400, 260);
-// add_image_size('accueil_formation', 617, 260);
-// add_image_size('accueil_etudiants', 220, 220);
-// add_image_size('single_etudiant', 400, 400);
-// add_image_size('single_actu', 840, 606);
-// add_image_size('single_module', 1440, 400, true);
-
-// Ajout des tailles d'images dans l'éditeur
-function ecf_editor_image_sizes( $sizes ) {
-    $sizes = array_merge( $sizes, array(
-        'accueil_hero' => '1440 x 677',
-        'accueil_actu' => '400 x 260',
-        'accueil_formation' => '617 x 260',
-        'accueil_etudiants' => '220 x 220',
-        'single_etudiant' => '400 x 400',
-        'single_actu' => '840 x 606',
-        'single_module' => '1440 x 400',
-        // 'archive_thumbnail' => 'Archive 540 x 500',
-        // 'portfolio_featured' => 'Portfolio featured 1100 x 500',
-        // 'portfolio_preview' => 'Portfolio preview 635 x 400',
-    ));
-    return $sizes;
-}
-add_filter( 'image_size_names_choose', 'ecf_editor_image_sizes' );
+add_image_size('accueil_hero', 1440, 677);
+add_image_size('archive_item_actualite', 400, 260);
+add_image_size('archive_item_module', 617, 260);
+add_image_size('archive_item_etudiant-e', 220, 220);
+add_image_size('single_etudiant', 400, 400);
+add_image_size('single_actualite', 840, 606);
+add_image_size('single_module', 1440, 400, true);
 
 /* Menus */
 

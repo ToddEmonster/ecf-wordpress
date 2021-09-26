@@ -2,7 +2,7 @@
 
 <main id="main-content" class="post">
 	<div class="container container-narrow">
-		<?php the_post_thumbnail( 'single-actu', [
+		<?php the_post_thumbnail( 'single-actualite', [
 			'class' => 'featured-img',
 			'alt' => get_the_title(),
 			'loading' => 'lazy'
