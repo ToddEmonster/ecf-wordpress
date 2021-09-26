@@ -73,3 +73,27 @@ function student_override_query( $wp_query ) {
     endif;
 }
 add_action( 'pre_get_posts', 'student_override_query' );
+
+/* Contact Form 7 */
+
+// Remove <p> and <br/> from Contact Form 7
+add_filter('wpcf7_autop_or_not', '__return_false');
+
+// To access the Arrow SVG icon url from WP Admin Contact Form interface
+function wpcf7_add_form_tag_arrow_icon_url() {
+    // Add shortcode for the form [arrow_icon_url]
+    wpcf7_add_form_tag( 'arrow_icon_url',
+        'wpcf7_arrow_icon_url_form_tag_handler',
+        array(
+            'name-attr' => true
+        )
+    );
+}
+add_action( 'wpcf7_init', 'wpcf7_add_form_tag_arrow_icon_url' );
+
+// Parse the shortcode in the frontend
+function wpcf7_arrow_icon_url_form_tag_handler( $tag ) {
+    global $wp;
+    $arrow_url = get_stylesheet_directory_uri() . '/img/icon-arrow-right.svg';
+    return $arrow_url;
+}
