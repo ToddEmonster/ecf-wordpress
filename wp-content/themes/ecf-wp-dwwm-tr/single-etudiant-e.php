@@ -22,8 +22,8 @@
             <div class="field-content"><?php the_field( 'serie' ); ?></div>
         </div>
         <div class="field">
-            <div class="field-title"><?php echo get_field_object('jeu-video')['label'] ?></div>
-            <div class="field-content"><?php the_field( 'jeu-video' ); ?></div>
+            <div class="field-title"><?php echo get_field_object('jeu_video')['label'] ?></div>
+            <div class="field-content"><?php the_field( 'jeu_video' ); ?></div>
         </div>
         <div class="field">
             <div class="field-title"><?php echo get_field_object('heros-ine')['label'] ?></div>
@@ -42,8 +42,8 @@
             <div class="field-content"><?php the_field( 'application' ); ?></div>
         </div>
         <div class="field">
-            <div class="field-title"><?php echo get_field_object('site-web')['label'] ?></div>
-            <div class="field-content"><?php the_field( 'site-web' ); ?></div>
+            <div class="field-title"><?php echo get_field_object('site_web')['label'] ?></div>
+            <div class="field-content"><?php the_field( 'site_web' ); ?></div>
         </div>
         <div class="field">
             <div class="field-title"><?php echo get_field_object('background')['label'] ?></div>
