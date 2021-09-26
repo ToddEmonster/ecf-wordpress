@@ -19,7 +19,7 @@ function todd_register_post_types() {
         'has_archive' => true,
         'supports' => array( 'title', 'editor','thumbnail', 'revisions' ),
         'menu_position' => 5, 
-        'menu_icon' => 'dashicons-admin-users',
+        'menu_icon' => 'dashicons-universal-access',
     );
 
     register_post_type( 'etudiant-e', $args );
@@ -27,7 +27,7 @@ function todd_register_post_types() {
     // CPT Module
     $labels = array(
         'name' => 'Module',
-        'all_items' => 'Tous les modules',  // affiché dans le sous menu
+        'all_items' => 'Tous les modules',
         'singular_name' => 'Module',
         'add_new_item' => 'Ajouter un module',
         'edit_item' => 'Modifier le module',
