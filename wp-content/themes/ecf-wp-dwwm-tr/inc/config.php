@@ -65,3 +65,11 @@ function new_excerpt_more( $more ) {
     return "<br />..."; // replace the normal [...]
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+// Afficher 16 étudiants
+function student_override_query( $wp_query ) {
+    if( $wp_query->is_main_query() and is_post_type_archive( 'etudiant-e' ) ): 
+        $wp_query->set( 'posts_per_page', 16 );
+    endif;
+}
+add_action( 'pre_get_posts', 'student_override_query' );
