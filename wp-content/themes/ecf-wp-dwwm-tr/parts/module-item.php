@@ -1,6 +1,6 @@
 <article class="card">
 
-    <?php the_post_thumbnail('single-module', [
+    <?php the_post_thumbnail('', [
         'class' => 'card-img',
         'alt' => get_the_title(),
         'loading' => 'lazy'
