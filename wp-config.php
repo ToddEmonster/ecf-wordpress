@@ -1,4 +1,36 @@
 <?php
+# BEGIN SecuPress debugging
+define( 'WP_DEBUG_DISPLAY', false );
+# END SecuPress
+
+
+# BEGIN SecuPress repair
+define( 'WP_ALLOW_REPAIR', false );
+# END SecuPress
+
+
+# BEGIN SecuPress locations
+define( 'RELOCATE', false );
+define( 'WP_SITEURL', 'http://localhost:8888/ecf-wordpress' );
+define( 'WP_HOME', 'http://localhost:8888/ecf-wordpress' );
+# END SecuPress
+
+
+# BEGIN SecuPress file_edit
+define( 'DISALLOW_FILE_EDIT', true );
+# END SecuPress
+
+
+# BEGIN SecuPress dieondberror
+define( 'DIEONDBERROR', false );
+# END SecuPress
+
+
+# BEGIN SecuPress unfiltered_uploads
+define( 'ALLOW_UNFILTERED_UPLOADS', false );
+# END SecuPress
+
+
 /**
  * La configuration de base de votre installation WordPress.
  *
@@ -55,14 +87,7 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         '.<}A=~nOJ6zMUkOfUPk]vtYPLdaet$o[0R[m_moh3?7>L+1G61N{.)0o~%&[Y*r#' );
-define( 'SECURE_AUTH_KEY',  '9z`CA$Z}A$ `8.I|1K#!bipD4!WWpbhbS,u{]`g]5TZyq^{Sg9p6zFKP|dIbEn,9' );
-define( 'LOGGED_IN_KEY',    'y%mQ,5z+](wS9ZN{[0LYYM?J90cQ?.s`~w%PH#=HlULlB~BHX(=n Dawi|s&eCK=' );
-define( 'NONCE_KEY',        '@$sLgk=~zi%oE>]|A^zG}G!sA5f=dk7in3zedtdcONnkG6hb1(StZl050=bm_`9]' );
-define( 'AUTH_SALT',        's) 43e@nbM{G =:V9lwReG`kvgD(4Ei9LlyF^9k-,s`GSyS/|/`x1acq}$2;2H3k' );
-define( 'SECURE_AUTH_SALT', 'Ob:iSisftZY6`,S.C*`0FS{DRalyykP7qwQD9${B_(!<eQ`!gw]*_9{;{kCF3RP&' );
-define( 'LOGGED_IN_SALT',   'bFXYzC$Sk=$,;a& f{8_)vii&xf5|8w!$|+(/jp0iQKH/0vi_fJq`{tHD%~_(P56' );
-define( 'NONCE_SALT',       '_7sSUEDBPzEkU:ueg-@U_ K?MXofP6,>MI<RS[&N&o>qsoJZ!)O@NzD2trK)Fyjs' );
+/** If you want to add secret keys back in wp-config.php, get new ones at https://api.wordpress.org/secret-key/1.1/salt, then delete this file. */
 /**#@-*/
 
 /**
