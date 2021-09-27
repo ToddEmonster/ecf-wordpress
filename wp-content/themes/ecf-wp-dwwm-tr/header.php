@@ -13,13 +13,17 @@
     <header class="main-header">
         <div class="container">
             <div class="logo"><a href="<?php echo home_url( '/' ); ?>">DWWM</a></div>
-            <?php wp_nav_menu( array( 
-                    'theme_location' => 'main',
-                    'container' => 'nav',
-                    'container_class' => 'main-nav',
-                    'before' => '<button aria-expanded="false" aria-controls="main-menu">Menu</button>',
-                    'menu_class' => 'menu',
-            ) ); ?>
+            <nav class="main-nav">
+                <button aria-expanded="false" aria-controls="main-menu">Menu</button>
+                <?php 
+                    $args = array(
+                        'theme_location' => 'main',
+                        'container'      => FALSE,
+                        'menu_id' => 'main-menu',
+                    );
+                    wp_nav_menu($args);
+                ?>
+            </nav>
         </div>
     </header>
     <?php wp_body_open(); ?>
